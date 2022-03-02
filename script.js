@@ -141,7 +141,7 @@ const moveBall = () => {
     if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
         ball.dx *= -1; // hit vertical wall, invert X direction
     }
-    if (ball.y - ball.size < 0) {
+    if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
         ball.dy *= -1; // hit horizontal wall, invert X direction
     }
 
@@ -152,6 +152,7 @@ const moveBall = () => {
         ball.y + ball.size > paddle.y
     ) {
         ball.dy = -ball.speed;
+        ball.dx = ball.dx - 0.3 * paddle.dx;
     }
 
     // Brick Collisions
