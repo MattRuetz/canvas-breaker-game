@@ -9,6 +9,7 @@ const brickRowCount = 4;
 
 let score = 0;
 
+//
 let colors = {
     brick: '#0095dd',
     ball: '#0095dd',
@@ -35,6 +36,7 @@ const paddle = {
     dx: 0,
 };
 
+// CSS props for a brick
 const brickProps = {
     w: 70,
     h: 20,
