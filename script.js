@@ -11,9 +11,9 @@ let score = 0;
 
 //
 let colors = {
-    brick: '#0095dd',
-    ball: '#0095dd',
-    paddle: '#0095dd',
+    brick: 'green',
+    ball: 'green',
+    paddle: 'green',
 };
 
 // Create ball props
